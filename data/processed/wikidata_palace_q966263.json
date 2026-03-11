@@ -1,0 +1,20 @@
+{
+  "building_id": "palace_of_fine_arts",
+  "source_id": "wikidata_palace_q966263",
+  "title": "Wikidata - Palace of Fine Arts (Q966263)",
+  "url": "https://www.wikidata.org/wiki/Special:EntityData/Q966263.json",
+  "license": "CC0",
+  "fetched_at": "2026-02-20T00:59:50.976969+00:00",
+  "sections": [
+    {
+      "heading": "Identity",
+      "page": null,
+      "text": "Label (en): Palace of Fine Arts. Description (en): structure in San Francisco."
+    },
+    {
+      "heading": "Key Claims",
+      "page": null,
+      "text": "Inception values: +1915-00-00T00:00:00Z. Coordinates: 37.802778, -122.448333. National Register reference number (P649): 04000659. Website (P856): https://palaceoffinearts.com/. Heritage designation (P1435): Q19558910."
+    }
+  ]
+}

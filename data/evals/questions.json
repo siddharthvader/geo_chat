@@ -1,0 +1,18 @@
+[
+  {
+    "building_id": "palace_of_fine_arts",
+    "q": "Why does it look like a ruin?",
+    "expected_hotspots": ["ruin_aesthetic_overview", "rotunda"]
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "q": "What are the weeping ladies?",
+    "expected_hotspots": ["weeping_ladies"]
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "q": "When was it reconstructed?",
+    "expected_hotspots": ["ruin_aesthetic_overview"],
+    "must_mention": ["1964", "1974"]
+  }
+]

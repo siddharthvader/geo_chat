@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rotunda",
+    "name": "Rotunda",
+    "description": "Central rotunda and main dome volume.",
+    "tags": ["rotunda", "dome", "central", "structure"],
+    "bbox": { "min": [-12.0, -1.0, -12.0], "max": [12.0, 24.0, 12.0] },
+    "camera": { "position": [28.0, 14.0, 28.0], "target": [0.0, 8.0, 0.0], "fov": 45 },
+    "meshNames": ["Rotunda", "MainDome"],
+    "priority": 10
+  },
+  {
+    "id": "dome_coffers",
+    "name": "Dome Coffers",
+    "description": "Coffered interior details of the rotunda dome.",
+    "tags": ["dome", "coffers", "ceiling", "detail"],
+    "bbox": { "min": [-7.0, 11.0, -7.0], "max": [7.0, 22.0, 7.0] },
+    "camera": { "position": [0.0, 7.0, 0.0], "target": [0.0, 18.0, 0.0], "fov": 55 },
+    "meshNames": ["Dome_Coffers"],
+    "priority": 9
+  },
+  {
+    "id": "weeping_ladies",
+    "name": "Weeping Ladies",
+    "description": "Iconic sculptural figures at the rotunda.",
+    "tags": ["weeping", "ladies", "sculpture", "statue"],
+    "bbox": { "min": [-3.0, 0.0, 8.0], "max": [3.0, 11.0, 14.0] },
+    "camera": { "position": [0.0, 5.0, 21.0], "target": [0.0, 5.5, 11.0], "fov": 40 },
+    "meshNames": ["Weeping_Ladies", "Figure_Group"],
+    "priority": 10
+  },
+  {
+    "id": "colonnade_north",
+    "name": "North Colonnade",
+    "description": "Arcade of columns on north side.",
+    "tags": ["colonnade", "north", "columns", "arcade"],
+    "bbox": { "min": [-45.0, -1.0, -8.0], "max": [-12.0, 12.0, 8.0] },
+    "camera": { "position": [-54.0, 8.0, 15.0], "target": [-28.0, 5.0, 0.0], "fov": 50 },
+    "meshNames": ["Colonnade_North"],
+    "priority": 6
+  },
+  {
+    "id": "colonnade_south",
+    "name": "South Colonnade",
+    "description": "Arcade of columns on south side.",
+    "tags": ["colonnade", "south", "columns", "arcade"],
+    "bbox": { "min": [12.0, -1.0, -8.0], "max": [45.0, 12.0, 8.0] },
+    "camera": { "position": [55.0, 8.0, 14.0], "target": [28.0, 5.0, 0.0], "fov": 50 },
+    "meshNames": ["Colonnade_South"],
+    "priority": 6
+  },
+  {
+    "id": "lagoon_axis",
+    "name": "Lagoon Axis",
+    "description": "Main reflecting lagoon approach axis.",
+    "tags": ["lagoon", "water", "axis", "reflection"],
+    "bbox": { "min": [-18.0, -2.0, 14.0], "max": [18.0, 1.0, 80.0] },
+    "camera": { "position": [0.0, 16.0, 88.0], "target": [0.0, 2.0, 26.0], "fov": 48 },
+    "meshNames": ["Lagoon", "Water_Main"],
+    "priority": 7
+  },
+  {
+    "id": "capitals_corinthian_detail",
+    "name": "Corinthian Capitals",
+    "description": "Decorative Corinthian capitals at column tops.",
+    "tags": ["capitals", "corinthian", "ornament", "columns"],
+    "bbox": { "min": [-10.0, 8.0, -3.0], "max": [10.0, 14.0, 3.0] },
+    "camera": { "position": [16.0, 10.0, 8.0], "target": [2.0, 10.5, 0.0], "fov": 38 },
+    "meshNames": ["Capital_Set_A", "Capital_Set_B"],
+    "priority": 8
+  },
+  {
+    "id": "entablature_frieze",
+    "name": "Entablature Frieze",
+    "description": "Frieze and entablature band above the columns.",
+    "tags": ["entablature", "frieze", "classical", "detail"],
+    "bbox": { "min": [-11.0, 12.0, -11.0], "max": [11.0, 16.0, 11.0] },
+    "camera": { "position": [20.0, 13.5, 10.0], "target": [0.0, 13.5, 0.0], "fov": 42 },
+    "meshNames": ["Entablature", "Frieze_Main"],
+    "priority": 7
+  },
+  {
+    "id": "exhibition_hall_arc",
+    "name": "Exhibition Hall Arc",
+    "description": "Curving exhibition hall remains and arc geometry.",
+    "tags": ["exhibition", "hall", "arc", "1915"],
+    "bbox": { "min": [-60.0, -1.0, -36.0], "max": [60.0, 18.0, -10.0] },
+    "camera": { "position": [0.0, 22.0, -68.0], "target": [0.0, 8.0, -22.0], "fov": 55 },
+    "meshNames": ["Exhibition_Arc"],
+    "priority": 5
+  },
+  {
+    "id": "ruin_aesthetic_overview",
+    "name": "Ruin Aesthetic Overview",
+    "description": "Wide framing emphasizing deliberate ruin-like composition.",
+    "tags": ["ruin", "aesthetic", "overview", "romantic"],
+    "bbox": { "min": [-75.0, -2.0, -40.0], "max": [75.0, 30.0, 90.0] },
+    "camera": { "position": [70.0, 28.0, 95.0], "target": [0.0, 9.0, 10.0], "fov": 52 },
+    "meshNames": ["SceneRoot"],
+    "priority": 10
+  },
+  {
+    "id": "reconstruction_info_plaque_area",
+    "name": "Reconstruction Plaque Area",
+    "description": "Area associated with 1960s-1970s reconstruction interpretation.",
+    "tags": ["reconstruction", "plaque", "1964", "1974", "history"],
+    "bbox": { "min": [-6.0, -1.0, 20.0], "max": [6.0, 4.0, 30.0] },
+    "camera": { "position": [0.0, 5.0, 36.0], "target": [0.0, 2.0, 25.0], "fov": 43 },
+    "meshNames": ["Plaque_Area"],
+    "priority": 9
+  },
+  {
+    "id": "peristyle_columns",
+    "name": "Peristyle Columns",
+    "description": "Ring of monumental peristyle columns around the rotunda.",
+    "tags": ["peristyle", "columns", "ring", "classical"],
+    "bbox": { "min": [-14.0, -1.0, -14.0], "max": [14.0, 17.0, 14.0] },
+    "camera": { "position": [26.0, 9.0, 0.0], "target": [0.0, 7.0, 0.0], "fov": 44 },
+    "meshNames": ["Peristyle_Columns"],
+    "priority": 8
+  }
+]

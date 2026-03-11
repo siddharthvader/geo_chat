@@ -1,0 +1,114 @@
+[
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "wikipedia_palace_of_fine_arts",
+    "title": "Palace of Fine Arts - Wikipedia (API Parse)",
+    "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Palace_of_Fine_Arts&prop=text|sections&format=json&formatversion=2",
+    "type": "json",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "wikipedia_ppie_context",
+    "title": "Panama-Pacific International Exposition - Wikipedia (API Parse)",
+    "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Panama%E2%80%93Pacific_International_Exposition&prop=text|sections&format=json&formatversion=2",
+    "type": "json",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "wikidata_palace_q966263",
+    "title": "Wikidata - Palace of Fine Arts (Q966263)",
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q966263.json",
+    "type": "json",
+    "license": "CC0"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "palace_official_info_com",
+    "title": "Palace of Fine Arts (Info)",
+    "url": "https://palaceoffinearts.com/info/",
+    "type": "html",
+    "license": "Site terms"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "nps_palace_place",
+    "title": "NPS - Palace of Fine Arts Place Page",
+    "url": "https://www.nps.gov/places/000/palace-of-fine-arts.htm",
+    "type": "html",
+    "license": "U.S. Government work"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "nps_ppie_palaces",
+    "title": "NPS - PPiE Palaces",
+    "url": "https://www.nps.gov/goga/learn/historyculture/ppie-palaces.htm",
+    "type": "html",
+    "license": "U.S. Government work"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "sf_public_works_restoration",
+    "title": "San Francisco Public Works - Palace of Fine Arts Restoration",
+    "url": "https://sfpublicworks.org/project/palace-fine-arts-restoration",
+    "type": "html",
+    "license": "City and County of San Francisco site terms"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "sf_recpark_palace_facility",
+    "title": "SF Recreation and Parks - Palace of Fine Arts Facility",
+    "url": "https://sfrecpark.org/Facilities/Facility/Details/Palace-of-Fine-Arts-423",
+    "type": "html",
+    "license": "City and County of San Francisco site terms"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "sf_recpark_palace_history_page",
+    "title": "SF Recreation and Parks - Palace of Fine Arts",
+    "url": "https://sfrecpark.org/917/Palace-of-Fine-Arts",
+    "type": "html",
+    "license": "City and County of San Francisco site terms"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "loc_palace_item_2013630485",
+    "title": "Library of Congress Item 2013630485",
+    "url": "https://www.loc.gov/pictures/item/2013630485/?fo=json",
+    "type": "json",
+    "license": "See LOC rights statement"
+  },
+  {
+    "building_id": "palace_of_fine_arts",
+    "source_id": "loc_palace_search",
+    "title": "Library of Congress Search - Palace of Fine Arts San Francisco",
+    "url": "https://www.loc.gov/pictures/search/?q=Palace%20of%20Fine%20Arts%20San%20Francisco&fo=json",
+    "type": "json",
+    "license": "See LOC rights statement"
+  },
+  {
+    "building_id": "alcatraz_island",
+    "source_id": "nps_alcatraz_history_seed",
+    "title": "NPS Alcatraz History & Culture (Seed)",
+    "url": "https://www.nps.gov/alca/learn/historyculture/index.htm",
+    "type": "seed_json",
+    "license": "U.S. Government work"
+  },
+  {
+    "building_id": "alcatraz_island",
+    "source_id": "bop_alcatraz_history_seed",
+    "title": "Federal Bureau of Prisons Alcatraz History (Seed)",
+    "url": "https://www.bop.gov/about/history/alcatraz.jsp",
+    "type": "seed_json",
+    "license": "U.S. Government work"
+  },
+  {
+    "building_id": "alcatraz_island",
+    "source_id": "wikipedia_alcatraz_seed",
+    "title": "Alcatraz Island - Wikipedia (Seed)",
+    "url": "https://en.wikipedia.org/wiki/Alcatraz_Island",
+    "type": "seed_json",
+    "license": "CC BY-SA 4.0"
+  }
+]

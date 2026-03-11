@@ -1,0 +1,19 @@
+{
+  "name": "buildingtalk",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev:web:npm": "npm --workspace @buildingtalk/web run dev",
+    "build:web:npm": "npm --workspace @buildingtalk/web run build",
+    "lint:web:npm": "npm --workspace @buildingtalk/web run lint",
+    "typecheck:npm": "npm run -ws --if-present typecheck",
+    "dev:web": "pnpm --filter @buildingtalk/web dev",
+    "build:web": "pnpm --filter @buildingtalk/web build",
+    "lint:web": "pnpm --filter @buildingtalk/web lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

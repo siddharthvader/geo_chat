@@ -1,0 +1,29 @@
+# Node
+node_modules
+.pnpm-store
+.next
+dist
+*.tsbuildinfo
+
+# Python
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+
+# Env
+.env
+.env.local
+
+# Data artifacts
+*.log
+data/sources/*.pdf
+data/sources/*.html
+data/sources/*.txt
+data/models/*.glb
+/palace.glb
+/alcatraz.glb
+apps/web/public/models/alcatraz.glb
+
+# OS
+.DS_Store

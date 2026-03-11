@@ -1,0 +1,756 @@
+{"search":{
+    "field": null, 
+    "hits": 97, 
+    "sort_order": null, 
+    "do_facets": true, 
+    "focus_item": null, 
+    "query": "Palace of Fine Arts San Francisco", 
+    "type": "search", 
+    "sort_by": null
+},
+"focus":null,
+"views":{
+    "current": "list", 
+    "grid": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&st=grid", 
+    "list": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco", 
+    "gallery": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&st=gallery", 
+    "slideshow": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&st=slideshow"
+},
+"facets":[
+    {
+        "type": "displayed", 
+        "filters": [
+            {
+                "count": 68, 
+                "on": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&fa=displayed%3Aanywhere&sp=1&fo=json", 
+                "selected": false, 
+                "off": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=1&fo=json", 
+                "title": "Larger image available anywhere"
+            }, 
+            {
+                "count": 2, 
+                "on": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&fa=displayed%3Alc_only&sp=1&fo=json", 
+                "selected": false, 
+                "off": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=1&fo=json", 
+                "title": "Larger image available only at the Library of Congress"
+            }, 
+            {
+                "count": 27, 
+                "on": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&fa=displayed%3Anot_digitized&sp=1&fo=json", 
+                "selected": false, 
+                "off": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=1&fo=json", 
+                "title": "Not Digitized"
+            }, 
+            {
+                "count": 3, 
+                "on": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&fa=displayed%3Asurveys_only&sp=1&fo=json", 
+                "selected": false, 
+                "off": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=1&fo=json", 
+                "title": "Surveys only"
+            }
+        ], 
+        "title": "displayed"
+    }
+],
+"links":{
+    "json": "https://www.loc.gov/pictures/search/?q=Palace%20of%20Fine%20Arts%20San%20Francisco&fo=json", 
+    "html": "https://www.loc.gov/pictures/search/?q=Palace%20of%20Fine%20Arts%20San%20Francisco", 
+    "rss": "https://www.loc.gov/pictures/search/?q=Palace%20of%20Fine%20Arts%20San%20Francisco&fo=rss"
+},
+"suggestions":{
+    "possible": []
+},
+"pages":{
+    "current": 1, 
+    "next": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=2", 
+    "perpage": 20, 
+    "last": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=5", 
+    "page_list": [
+        {
+            "url": null, 
+            "number": 1
+        }, 
+        {
+            "url": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=2", 
+            "number": 2
+        }, 
+        {
+            "url": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=3", 
+            "number": 3
+        }, 
+        {
+            "url": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=4", 
+            "number": 4
+        }, 
+        {
+            "url": "https://www.loc.gov/pictures/search/?q=Palace+of+Fine+Arts+San+Francisco&sp=5", 
+            "number": 5
+        }
+    ], 
+    "previous": null, 
+    "total": 5, 
+    "results": "1 - 20", 
+    "first": null
+},
+"collection":null,
+"results":[
+    {
+        "source_created": "2013-05-09T00:00:00Z", 
+        "index": 1, 
+        "medium": "1 photograph : digital, tiff file, color.", 
+        "reproduction_number": "LC-DIG-highsm-21057 (original digital file)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2013630485/", 
+            "resource": "https://www.loc.gov/pictures/item/2013630485/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21057r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21057_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21057_150px.jpg"
+        }, 
+        "created": "2016-04-20T00:00:00Z", 
+        "modified": "2016-04-20T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-DIG-highsm- 21057 (ONLINE) [P&P]", 
+        "medium_brief": "1 photograph :", 
+        "source_modified": "2013-05-17T00:00:00Z", 
+        "pk": "2013630485", 
+        "created_published_date": "2012.", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "Palace of Fine Arts.", 
+            "America.", 
+            "Digital photographs--Color--2010-2020."
+        ]
+    }, 
+    {
+        "source_created": "2013-05-09T00:00:00Z", 
+        "index": 2, 
+        "medium": "1 photograph : digital, tiff file, color.", 
+        "reproduction_number": "LC-DIG-highsm-21058 (original digital file)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2013630486/", 
+            "resource": "https://www.loc.gov/pictures/item/2013630486/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21058r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21058_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21058_150px.jpg"
+        }, 
+        "created": "2016-04-20T00:00:00Z", 
+        "modified": "2016-04-20T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-DIG-highsm- 21058 (ONLINE) [P&P]", 
+        "medium_brief": "1 photograph :", 
+        "source_modified": "2013-05-17T00:00:00Z", 
+        "pk": "2013630486", 
+        "created_published_date": "2012.", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "Palace of Fine Arts.", 
+            "America.", 
+            "Digital photographs--Color--2010-2020."
+        ]
+    }, 
+    {
+        "source_created": "2013-05-09T00:00:00Z", 
+        "index": 3, 
+        "medium": "1 photograph : digital, tiff file, color.", 
+        "reproduction_number": "LC-DIG-highsm-21067 (original digital file)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2013630495/", 
+            "resource": "https://www.loc.gov/pictures/item/2013630495/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21067r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21067_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21067_150px.jpg"
+        }, 
+        "created": "2016-04-20T00:00:00Z", 
+        "modified": "2016-04-20T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-DIG-highsm- 21067 (ONLINE) [P&P]", 
+        "medium_brief": "1 photograph :", 
+        "source_modified": "2013-05-17T00:00:00Z", 
+        "pk": "2013630495", 
+        "created_published_date": "2012.", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "Palace of Fine Arts.", 
+            "America.", 
+            "Digital photographs--Color--2010-2020."
+        ]
+    }, 
+    {
+        "source_created": "2013-05-09T00:00:00Z", 
+        "index": 4, 
+        "medium": "1 photograph : digital, tiff file, color.", 
+        "reproduction_number": "LC-DIG-highsm-20980 (original digital file)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2013630408/", 
+            "resource": "https://www.loc.gov/pictures/item/2013630408/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/20900/20980r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/20900/20980_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/20900/20980_150px.jpg"
+        }, 
+        "created": "2016-04-21T00:00:00Z", 
+        "modified": "2016-04-21T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-DIG-highsm- 20980 (ONLINE) [P&P]", 
+        "medium_brief": "1 photograph :", 
+        "source_modified": "2013-06-19T00:00:00Z", 
+        "pk": "2013630408", 
+        "created_published_date": "2012.", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "Palace of Fine Arts.", 
+            "America.", 
+            "Digital photographs--Color--2010-2020."
+        ]
+    }, 
+    {
+        "source_created": "2013-05-09T00:00:00Z", 
+        "index": 5, 
+        "medium": "1 photograph : digital, tiff file, color.", 
+        "reproduction_number": "LC-DIG-highsm-21056 (original digital file)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2013630484/", 
+            "resource": "https://www.loc.gov/pictures/item/2013630484/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21056r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21056_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/21000/21056_150px.jpg"
+        }, 
+        "created": "2016-04-21T00:00:00Z", 
+        "modified": "2016-04-21T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-DIG-highsm- 21056 (ONLINE) [P&P]", 
+        "medium_brief": "1 photograph :", 
+        "source_modified": "2013-05-17T00:00:00Z", 
+        "pk": "2013630484", 
+        "created_published_date": "2012.", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "Palace of Fine Arts.", 
+            "America.", 
+            "Digital photographs--Color--2010-2020."
+        ]
+    }, 
+    {
+        "source_created": "2011-08-10T00:00:00Z", 
+        "index": 6, 
+        "medium": "1 transparency : color ; 4 x 5 in. or smaller.", 
+        "reproduction_number": "LC-DIG-highsm-12419 (digital file from original)\nLC-HS503-1158 (color film transparency)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2011630615/", 
+            "resource": "https://www.loc.gov/pictures/item/2011630615/resource/"
+        }, 
+        "title": "Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/12400/12419r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/12400/12419_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/12400/12419_150px.jpg"
+        }, 
+        "created": "2016-04-20T00:00:00Z", 
+        "modified": "2016-04-20T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-HS503- 1158 (ONLINE) [P&P]", 
+        "medium_brief": "1 transparency :", 
+        "source_modified": "2015-04-16T00:00:00Z", 
+        "pk": "2011630615", 
+        "created_published_date": "[between 1980 and 2006]", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "America.", 
+            "Palace of Fine Arts.", 
+            "Transparencies--color--1980-2010."
+        ]
+    }, 
+    {
+        "source_created": "2024-05-22T00:00:00Z", 
+        "index": 7, 
+        "medium": "1 print : photomechanical print ; sheet 9 x 14 cm (postcard format)", 
+        "reproduction_number": "LC-DIG-pcrd-1a01090 (digital file from original, front)\nLC-DIG-pcrd-2a01090 (digital file from original, back)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2025662700/", 
+            "resource": "https://www.loc.gov/pictures/item/2025662700/resource/"
+        }, 
+        "title": "The Palace of Fine Arts, San Francisco", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a00000/1a01000/1a01000/1a01090_150px.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a00000/1a01000/1a01000/1a01090_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a00000/1a01000/1a01000/1a01090_150px.jpg"
+        }, 
+        "created": "2025-06-03T08:57:19Z", 
+        "modified": "2025-06-03T08:57:22Z", 
+        "collection": [
+            "pcrd", 
+            "pp"
+        ], 
+        "creator": null, 
+        "call_number": "PCRD 1 - California - San Francisco, no. 78 [P&P]", 
+        "medium_brief": "1 print :", 
+        "source_modified": "2025-05-08T10:54:31Z", 
+        "pk": "2025662700", 
+        "created_published_date": "1995.", 
+        "subjects": [
+            "Exhibition facilities--1990-2000.", 
+            "United States--California--San Francisco.", 
+            "Postcards--1990-2000."
+        ]
+    }, 
+    {
+        "source_created": "2011-08-10T00:00:00Z", 
+        "index": 8, 
+        "medium": "1 transparency : color ; 4 x 5 in. or smaller.", 
+        "reproduction_number": "LC-DIG-highsm-11899 (digital file from original)\nLC-HS503-638 (color film transparency)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/2011630094/", 
+            "resource": "https://www.loc.gov/pictures/item/2011630094/resource/"
+        }, 
+        "title": "Aerial from Palace of Fine Arts, San Francisco, California", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/highsm/11800/11899r.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/highsm/11800/11899_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/highsm/11800/11899_150px.jpg"
+        }, 
+        "created": "2016-04-21T00:00:00Z", 
+        "modified": "2016-04-21T00:00:00Z", 
+        "collection": [
+            "diof", 
+            "highsm", 
+            "minload", 
+            "pp"
+        ], 
+        "creator": "Highsmith, Carol M., 1946-", 
+        "call_number": "LC-HS503- 638 (ONLINE) [P&P]", 
+        "medium_brief": "1 transparency :", 
+        "source_modified": "2015-03-24T00:00:00Z", 
+        "pk": "2011630094", 
+        "created_published_date": "[between 1980 and 2006]", 
+        "subjects": [
+            "United States--California--San Francisco.", 
+            "America.", 
+            "Cities.", 
+            "Aerial views.", 
+            "Transparencies--color--1980-2010."
+        ]
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 9, 
+        "medium": "5 x 7 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--3", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016992p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016992p/resource/"
+        }, 
+        "title": "3.  Historic American Buildings Survey Joseph A. Baird, Jr., Photographer, 1956 CEILING OF ROTUNDA DOME - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016992pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016992p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016992p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Baird, Joseph A. Jr.", 
+        "call_number": "HABS CAL,38-SANFRA,77--3", 
+        "medium_brief": "5 x 7 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016992p", 
+        "created_published_date": "1956", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 10, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--8", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016997p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016997p/resource/"
+        }, 
+        "title": "8. Attic of colonnade, with statuary - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016997pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016997p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016997p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--8", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016997p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 11, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--12", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.017001p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.017001p/resource/"
+        }, 
+        "title": "12. Urns on plinth of rotunda - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017001pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017001p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017001p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--12", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.017001p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 12, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--13", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.017002p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.017002p/resource/"
+        }, 
+        "title": "13. Interior of rotunda - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017002pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017002p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/017002p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:40Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--13", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.017002p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 13, 
+        "medium": "13", 
+        "reproduction_number": null, 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686/resource/"
+        }, 
+        "title": "Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437cr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437c_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437c_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:38Z", 
+        "modified": "2024-12-13T20:11:00Z", 
+        "collection": [
+            "diof", 
+            "hh", 
+            "survey"
+        ], 
+        "creator": "Historic American Buildings Survey", 
+        "call_number": "HABS CAL,38-SANFRA,77-", 
+        "medium_brief": "Photo(s): 13, Color Transparencies: 2, Data Page(s): 16, Photo Caption Page(s): 2", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686", 
+        "created_published_date": "Documentation compiled after 1933", 
+        "subjects": [
+            "Exposition grounds", 
+            "colonnades", 
+            "rotundas"
+        ]
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 14, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--14 (CT)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.color.571437c/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.color.571437c/resource/"
+        }, 
+        "title": "14. Colonnade with rotunda in background - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437cr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437c_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571437c_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:38Z", 
+        "modified": "2024-05-20T16:39:38Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--14 (CT)", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.color.571437c", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 15, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--15 (CT)", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.color.571438c/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.color.571438c/resource/"
+        }, 
+        "title": "15. Entrance to rotunda - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571438cr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571438c_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/color/571438c_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:38Z", 
+        "modified": "2024-05-20T16:39:38Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--15 (CT)", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.color.571438c", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 16, 
+        "medium": "5 x 7 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--1", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016990p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016990p/resource/"
+        }, 
+        "title": "1.  Historic American Buildings Survey From The Blue Book, Official Souvenir View Book Panama Pacific International Exposition - 1915 VIEW FROM THE EAST - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016990pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016990p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016990p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:38Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": null, 
+        "call_number": "HABS CAL,38-SANFRA,77--1", 
+        "medium_brief": "5 x 7 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016990p", 
+        "created_published_date": "", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 17, 
+        "medium": "5 x 7 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--2", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016991p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016991p/resource/"
+        }, 
+        "title": "2.  Historic American Buildings Survey Joseph A. Baird, Jr., Photographer, 1956 VIEW FROM SOUTHEAST - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016991pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016991p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016991p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Baird, Joseph A. Jr.", 
+        "call_number": "HABS CAL,38-SANFRA,77--2", 
+        "medium_brief": "5 x 7 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016991p", 
+        "created_published_date": "1956", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 18, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--4", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016993p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016993p/resource/"
+        }, 
+        "title": "4. General view with lagoon in foreground\n - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016993pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016993p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016993p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--4", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016993p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 19, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--5", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016994p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016994p/resource/"
+        }, 
+        "title": "5. Colonnade with rotunda in background - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016994pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016994p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016994p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--5", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016994p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }, 
+    {
+        "source_created": "1970-01-01T00:00:00Z", 
+        "index": 20, 
+        "medium": "4 x 5 in.", 
+        "reproduction_number": "HABS CAL,38-SANFRA,77--6", 
+        "links": {
+            "item": "https://www.loc.gov/pictures/item/ca0686.photos.016995p/", 
+            "resource": "https://www.loc.gov/pictures/item/ca0686.photos.016995p/resource/"
+        }, 
+        "title": "6. Entrance to rotunda - Palace of Fine Arts, Baker Street, San Francisco, San Francisco County, CA", 
+        "image": {
+            "alt": "digitized item thumbnail", 
+            "full": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016995pr.jpg", 
+            "square": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016995p_75x75px.jpg", 
+            "thumb": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0600/ca0686/photos/016995p_150px.jpg"
+        }, 
+        "created": "2024-05-20T16:39:39Z", 
+        "modified": "2024-05-20T16:39:39Z", 
+        "collection": [
+            "diof", 
+            "hh"
+        ], 
+        "creator": "Lowe, Jet", 
+        "call_number": "HABS CAL,38-SANFRA,77--6", 
+        "medium_brief": "4 x 5 in.", 
+        "source_modified": "2024-05-20T17:39:00Z", 
+        "pk": "ca0686.photos.016995p", 
+        "created_published_date": "1981", 
+        "subjects": null
+    }
+]}

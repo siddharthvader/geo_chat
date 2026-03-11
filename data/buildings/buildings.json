@@ -1,0 +1,21 @@
+[
+  {
+    "id": "palace_of_fine_arts",
+    "name": "Palace of Fine Arts",
+    "location": "San Francisco, CA",
+    "description": "1915 exposition structure with rotunda, colonnade, and lagoon axis.",
+    "model_url": "/models/palace.glb",
+    "model_attribution": "Azad Balabanian via Sketchfab",
+    "model_source_url": "https://sketchfab.com/3d-models/palace-of-fine-arts-san-francisco-ca-a5e91dea48804b6c901d64483eb25b81",
+    "model_license": "CC BY 4.0",
+    "hotspots_file": "data/hotspots/palace_hotspots.json",
+    "suggested_prompts": [
+      "What are the weeping ladies?",
+      "Why does the site look like a ruin?",
+      "When was the Palace reconstructed?",
+      "What is special about the rotunda?",
+      "Which details are Corinthian?",
+      "What role did the lagoon play in the design?"
+    ]
+  }
+]
