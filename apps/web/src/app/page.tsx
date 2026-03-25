@@ -60,6 +60,8 @@ export default function HomePage() {
   const [error, setError] = useState<string>("");
   const [notice, setNotice] = useState<string>("");
   const [lastQuestion, setLastQuestion] = useState<string>("");
+  const [questionsCollapsed, setQuestionsCollapsed] = useState(false);
+  const [focusCollapsed, setFocusCollapsed] = useState(false);
 
   const sessionId = useMemo(uid, []);
 
@@ -160,6 +162,7 @@ export default function HomePage() {
     const hotspot = hotspots.find((h) => h.id === hotspotId);
     if (hotspot) {
       setActivePrimer(getHotspotPrimer(selectedBuildingId, hotspot));
+      setFocusCollapsed(false);
       track("hotspot_focus_manual", { hotspot_id: hotspot.id, building_id: selectedBuildingId });
     }
   }
@@ -217,6 +220,7 @@ export default function HomePage() {
         const topHotspot = hotspots.find((h) => h.id === hotspotIds[0]);
         if (topHotspot) {
           setActivePrimer(getHotspotPrimer(selectedBuildingId, topHotspot));
+          setFocusCollapsed(false);
         }
       } else if (response.actions.hotspots.length > 0) {
         setNotice("Hotspot confidence was below threshold, so camera motion was intentionally skipped.");
@@ -236,55 +240,33 @@ export default function HomePage() {
   }
 
   return (
-    <main className="grid min-h-screen grid-cols-1 gap-4 p-3 md:p-4 xl:grid-cols-[1.6fr_1fr] xl:p-4">
-      <section className="relative flex min-h-[48vh] flex-col rounded-3xl border border-black/10 bg-white/45 p-3 shadow-panel md:min-h-[60vh]">
-        <div className="mb-3 flex items-center justify-between gap-3 rounded-2xl bg-white/70 px-3 py-2">
-          <div>
-            <h1 className="font-[var(--font-display)] text-xl tracking-tight text-ink">
-              {selectedBuilding?.name || "Palace of Fine Arts"}
-            </h1>
-            <p className="font-[var(--font-body)] text-xs text-ink/75">
-              Interactive 3D guide with cited answers and camera focus.
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            {buildings.length > 1 && (
-              <select
-                value={selectedBuildingId}
-                onChange={(event) => setSelectedBuildingId(event.target.value)}
-                className="rounded-md border border-black/20 bg-white px-2 py-1 text-xs"
-              >
-                {buildings.map((building) => (
-                  <option key={building.id} value={building.id}>
-                    {building.name}
-                  </option>
-                ))}
-              </select>
-            )}
+    <main className="grid h-[100dvh] grid-cols-1 gap-4 overflow-hidden p-3 md:p-4 xl:grid-cols-[1.6fr_1fr] xl:p-4">
+      <section className="relative flex min-h-0 flex-col overflow-hidden rounded-3xl border border-black/10 bg-white/45 p-3 shadow-panel">
+        {selectedBuilding && (
+          <div className="mb-3 flex items-start justify-between gap-3 rounded-2xl bg-white/70 px-4 py-3 text-ink/80">
+            <div>
+              <h1 className="font-[var(--font-display)] text-2xl tracking-tight text-ink">
+                {selectedBuilding.name}
+              </h1>
+              <p className="font-[var(--font-body)] text-sm text-ink/75">
+                {selectedBuilding.location} • {selectedBuilding.description}
+              </p>
+            </div>
             {canUseDebug && (
               <button
                 type="button"
-                className="rounded-md border border-black/15 bg-[#f2dfc5] px-3 py-1 text-sm"
+                className="shrink-0 rounded-md border border-black/15 bg-[#f2dfc5] px-3 py-1 text-sm"
                 onClick={() => setDebugMode((v) => !v)}
               >
                 {debugMode ? "Debug On" : "Debug Off"}
               </button>
             )}
           </div>
-        </div>
-
-        {selectedBuilding && (
-          <div className="mb-2 rounded-xl bg-white/60 px-3 py-2 text-xs text-ink/80">
-            <div className="font-semibold">{selectedBuilding.name}</div>
-            <div>
-              {selectedBuilding.location} • {selectedBuilding.description}
-            </div>
-          </div>
         )}
 
         {modelNotice && <div className="mb-2 rounded-xl bg-[#f7e8cf] px-3 py-2 text-xs text-[#7a4f1b]">{modelNotice}</div>}
 
-        <div className="relative mt-1 h-[42vh] min-h-[320px] md:h-[52vh] xl:h-[58vh]">
+        <div className="relative min-h-0 flex-1">
           <BuildingViewer
             hotspots={hotspots}
             activeHotspotIds={activeHotspotIds}
@@ -330,7 +312,7 @@ export default function HomePage() {
         </footer>
       </section>
 
-      <section className="flex min-h-[44vh] flex-col rounded-3xl border border-black/10 bg-white/70 p-4 shadow-panel md:min-h-[60vh]">
+      <section className="flex min-h-0 flex-col overflow-hidden rounded-3xl border border-black/10 bg-white/70 p-4 shadow-panel">
         <div className="mb-3">
           <h2 className="font-[var(--font-display)] text-lg text-ink">Chat</h2>
           <p className="font-[var(--font-body)] text-sm text-ink/75">
@@ -339,51 +321,77 @@ export default function HomePage() {
         </div>
 
         <div className="mb-3 rounded-xl border border-black/10 bg-white/60 p-3">
-          <div className="mb-2 text-xs font-semibold text-ink/80">Questions to try</div>
-          <div className="flex flex-wrap gap-2">
-            {promptsToShow.map((prompt) => (
-              <button
-                key={prompt}
-                type="button"
-                onClick={() => {
-                  track("try_prompt_click", { prompt });
-                  submitMessage(prompt);
-                }}
-                className="rounded-full border border-black/10 bg-white px-3 py-2 text-left text-xs hover:bg-[#f3e4d0]"
-              >
-                {prompt}
-              </button>
-            ))}
+          <div className="flex items-center justify-between gap-3">
+            <div className="text-xs font-semibold text-ink/80">Questions to try</div>
+            <button
+              type="button"
+              aria-expanded={!questionsCollapsed}
+              className="text-sm text-ink/70"
+              onClick={() => setQuestionsCollapsed((value) => !value)}
+            >
+              <span className={`inline-block transition-transform ${questionsCollapsed ? "" : "rotate-90"}`}>&gt;</span>
+            </button>
           </div>
+          {!questionsCollapsed && (
+            <div className="mt-3 flex flex-wrap gap-2">
+              {promptsToShow.map((prompt) => (
+                <button
+                  key={prompt}
+                  type="button"
+                  onClick={() => {
+                    track("try_prompt_click", { prompt });
+                    submitMessage(prompt);
+                  }}
+                  className="rounded-full border border-black/10 bg-white px-3 py-2 text-left text-xs hover:bg-[#f3e4d0]"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {activePrimer && (
           <div className="mb-3 rounded-xl border border-[#9a3f22]/25 bg-[#f6eadb] p-3 text-sm">
             <div className="mb-1 flex items-center justify-between">
               <h3 className="font-[var(--font-display)] text-sm text-ink">Focus: {activePrimer.name}</h3>
-              <button type="button" className="text-xs text-ink/65 underline" onClick={() => setActivePrimer(null)}>
-                Clear
-              </button>
-            </div>
-            <p className="mb-2 text-xs text-ink/85">{activePrimer.overview}</p>
-            <div className="mb-1 text-[11px] font-medium text-ink/70">Follow-up ideas</div>
-            <div className="flex flex-wrap gap-2">
-              {activePrimer.followUps.map((question) => (
+              <div className="flex items-center gap-3">
                 <button
-                  key={question}
                   type="button"
-                  onClick={() => submitMessage(question)}
-                  className="rounded-full border border-black/10 bg-white px-2 py-1 text-[11px] hover:bg-[#efd8bd]"
+                  aria-expanded={!focusCollapsed}
+                  className="text-sm text-ink/70"
+                  onClick={() => setFocusCollapsed((value) => !value)}
                 >
-                  {question}
+                  <span className={`inline-block transition-transform ${focusCollapsed ? "" : "rotate-90"}`}>&gt;</span>
                 </button>
-              ))}
+                <button type="button" className="text-xs text-ink/65 underline" onClick={() => setActivePrimer(null)}>
+                  Clear
+                </button>
+              </div>
             </div>
-            <p className="mt-2 text-[10px] text-ink/60">This focus context is included in your next questions.</p>
+            {!focusCollapsed && (
+              <>
+                <p className="mb-2 text-xs text-ink/85">{activePrimer.overview}</p>
+                <div className="mb-1 text-[11px] font-medium text-ink/70">Follow-up ideas</div>
+                <div className="flex flex-wrap gap-2">
+                  {activePrimer.followUps.map((question) => (
+                    <button
+                      key={question}
+                      type="button"
+                      onClick={() => submitMessage(question)}
+                      className="rounded-full border border-black/10 bg-white px-2 py-1 text-[11px] hover:bg-[#efd8bd]"
+                    >
+                      {question}
+                    </button>
+                  ))}
+                </div>
+                <p className="mt-2 text-[10px] text-ink/60">This focus context is included in your next questions.</p>
+              </>
+            )}
           </div>
         )}
 
-        <div className="scrollbar-thin mb-3 min-h-[280px] max-h-[42vh] space-y-3 overflow-y-auto rounded-xl border border-black/10 bg-white/55 p-3 md:max-h-[46vh] xl:max-h-[50vh]">
+        <div className="scrollbar-thin mb-3 min-h-0 flex-1 space-y-3 overflow-y-auto rounded-xl border border-black/10 bg-white/55 p-3">
           {messages.map((msg, idx) => (
             <article
               key={`${idx}-${msg.role}`}
