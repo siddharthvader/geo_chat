@@ -14,15 +14,6 @@ type UIMessage = {
   latencyMs?: number;
 };
 
-const DEFAULT_PROMPTS = [
-  "What are the defining architectural features here?",
-  "Which part should I look at first?",
-  "What was this building originally used for?",
-  "What changed during restoration or reconstruction?",
-  "Which details are easy to miss?",
-  "How does this compare to another SF landmark?",
-];
-
 const TRY_THESE_FIVE = [
   "What are the weeping ladies?",
   "Why does this structure look like a ruin?",
@@ -77,10 +68,10 @@ export default function HomePage() {
     [buildings, selectedBuildingId],
   );
 
-  const suggestedPrompts =
+  const promptsToShow =
     selectedBuilding?.suggestedPrompts && selectedBuilding.suggestedPrompts.length > 0
-      ? selectedBuilding.suggestedPrompts
-      : DEFAULT_PROMPTS;
+      ? selectedBuilding.suggestedPrompts.slice(0, 5)
+      : TRY_THESE_FIVE;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -249,9 +240,11 @@ export default function HomePage() {
       <section className="relative flex min-h-[48vh] flex-col overflow-hidden rounded-3xl border border-black/10 bg-white/45 p-3 shadow-panel md:min-h-[60vh]">
         <div className="mb-3 flex items-center justify-between gap-3 rounded-2xl bg-white/70 px-3 py-2">
           <div>
-            <h1 className="font-[var(--font-display)] text-xl tracking-tight text-ink">BuildingTalk</h1>
+            <h1 className="font-[var(--font-display)] text-xl tracking-tight text-ink">
+              {selectedBuilding?.name || "Palace of Fine Arts"}
+            </h1>
             <p className="font-[var(--font-body)] text-xs text-ink/75">
-              Ask a question, get cited answers, and fly to the relevant building detail.
+              Interactive 3D guide with cited answers and camera focus.
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -346,9 +339,9 @@ export default function HomePage() {
         </div>
 
         <div className="mb-3 rounded-xl border border-black/10 bg-white/60 p-3">
-          <div className="mb-2 text-xs font-semibold text-ink/80">Try these 5 demo questions</div>
+          <div className="mb-2 text-xs font-semibold text-ink/80">Questions to try</div>
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {TRY_THESE_FIVE.map((prompt) => (
+            {promptsToShow.map((prompt) => (
               <button
                 key={prompt}
                 type="button"
@@ -357,25 +350,6 @@ export default function HomePage() {
                   submitMessage(prompt);
                 }}
                 className="rounded-lg border border-black/10 bg-white px-3 py-2 text-left text-xs hover:bg-[#f3e4d0]"
-              >
-                {prompt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="mb-3">
-          <div className="mb-2 text-xs font-medium text-ink/70">Suggested questions</div>
-          <div className="flex flex-wrap gap-2">
-            {suggestedPrompts.map((prompt) => (
-              <button
-                key={prompt}
-                type="button"
-                onClick={() => {
-                  track("suggested_prompt_click", { prompt, building_id: selectedBuildingId });
-                  submitMessage(prompt);
-                }}
-                className="rounded-full bg-[#f3ddc4] px-3 py-1 text-xs hover:bg-[#e9c89f]"
               >
                 {prompt}
               </button>
