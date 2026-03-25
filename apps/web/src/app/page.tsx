@@ -236,8 +236,8 @@ export default function HomePage() {
   }
 
   return (
-    <main className="grid min-h-screen grid-cols-1 gap-4 overflow-hidden p-3 md:p-4 xl:h-screen xl:grid-cols-[1.6fr_1fr] xl:p-4">
-      <section className="relative flex min-h-[48vh] flex-col overflow-hidden rounded-3xl border border-black/10 bg-white/45 p-3 shadow-panel md:min-h-[60vh] xl:h-[calc(100vh-2rem)] xl:min-h-0">
+    <main className="grid min-h-screen grid-cols-1 gap-4 p-3 md:p-4 xl:grid-cols-[1.6fr_1fr] xl:p-4">
+      <section className="relative flex min-h-[48vh] flex-col rounded-3xl border border-black/10 bg-white/45 p-3 shadow-panel md:min-h-[60vh]">
         <div className="mb-3 flex items-center justify-between gap-3 rounded-2xl bg-white/70 px-3 py-2">
           <div>
             <h1 className="font-[var(--font-display)] text-xl tracking-tight text-ink">
@@ -284,7 +284,7 @@ export default function HomePage() {
 
         {modelNotice && <div className="mb-2 rounded-xl bg-[#f7e8cf] px-3 py-2 text-xs text-[#7a4f1b]">{modelNotice}</div>}
 
-        <div className="relative flex-1">
+        <div className="relative mt-1 h-[42vh] min-h-[320px] md:h-[52vh] xl:h-[58vh]">
           <BuildingViewer
             hotspots={hotspots}
             activeHotspotIds={activeHotspotIds}
@@ -330,7 +330,7 @@ export default function HomePage() {
         </footer>
       </section>
 
-      <section className="flex min-h-[44vh] flex-col overflow-hidden rounded-3xl border border-black/10 bg-white/70 p-4 shadow-panel md:min-h-[60vh] xl:h-[calc(100vh-2rem)] xl:min-h-0">
+      <section className="flex min-h-[44vh] flex-col rounded-3xl border border-black/10 bg-white/70 p-4 shadow-panel md:min-h-[60vh]">
         <div className="mb-3">
           <h2 className="font-[var(--font-display)] text-lg text-ink">Chat</h2>
           <p className="font-[var(--font-body)] text-sm text-ink/75">
@@ -340,7 +340,7 @@ export default function HomePage() {
 
         <div className="mb-3 rounded-xl border border-black/10 bg-white/60 p-3">
           <div className="mb-2 text-xs font-semibold text-ink/80">Questions to try</div>
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          <div className="flex flex-wrap gap-2">
             {promptsToShow.map((prompt) => (
               <button
                 key={prompt}
@@ -349,7 +349,7 @@ export default function HomePage() {
                   track("try_prompt_click", { prompt });
                   submitMessage(prompt);
                 }}
-                className="rounded-lg border border-black/10 bg-white px-3 py-2 text-left text-xs hover:bg-[#f3e4d0]"
+                className="rounded-full border border-black/10 bg-white px-3 py-2 text-left text-xs hover:bg-[#f3e4d0]"
               >
                 {prompt}
               </button>
@@ -383,7 +383,7 @@ export default function HomePage() {
           </div>
         )}
 
-        <div className="scrollbar-thin mb-3 min-h-[220px] flex-1 space-y-3 overflow-y-auto rounded-xl border border-black/10 bg-white/55 p-3 xl:min-h-0">
+        <div className="scrollbar-thin mb-3 min-h-[280px] max-h-[42vh] space-y-3 overflow-y-auto rounded-xl border border-black/10 bg-white/55 p-3 md:max-h-[46vh] xl:max-h-[50vh]">
           {messages.map((msg, idx) => (
             <article
               key={`${idx}-${msg.role}`}
