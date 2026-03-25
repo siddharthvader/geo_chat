@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 from typing import Optional
 
@@ -13,6 +14,7 @@ from app.services.hotspots import rank_hotspots_by_query, summarize_hotspots_for
 
 HOTSPOT_CONFIDENCE_MIN = 0.78
 MIN_CONTEXT_SIGNAL_FOR_GROUNDED_ANSWER = 0.16
+logger = logging.getLogger(__name__)
 
 
 class StructuredLLMOutput(BaseModel):
@@ -338,7 +340,13 @@ def answer_question(
 
         actions = {"hotspots": _merge_hotspots(message, ranked_hotspots, parsed.hotspots, building_id)}
         return ChatResponse(answer=parsed.answer, citations=citations, actions=actions)
-    except Exception:
+    except Exception as exc:
+        logger.exception(
+            "LLM invocation failed for provider=%s model=%s building_id=%s",
+            settings.llm_provider,
+            settings.llm_model,
+            building_id or "",
+        )
         # Fallback keeps product responsive if model call fails.
         citations = _fallback_citations(chunks, max_items=3)
         fallback_answer = (
